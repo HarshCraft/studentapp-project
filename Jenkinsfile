@@ -1,4 +1,4 @@
-pipeline {
+kpipeline {
 	agent any 
 	
 	stages {
@@ -23,8 +23,8 @@ pipeline {
                     dir('backend') {
                         sh '''
                             mvn org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-                              -Dsonar.projectKey=sonarp3 \
-                              -Dsonar.projectName=sonarp3
+                              -Dsonar.projectKey=sonarp \
+                              -Dsonar.projectName=sonarp
                         '''
                     }
                 }
