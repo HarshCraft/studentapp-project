@@ -39,7 +39,7 @@ stage('QUALITY-GATES') {
             }
         }
 
-        stage('DELIVERY') {
+        stage('DELIVERY TO S3') {
             steps {
                 dir('backend')
                      {
