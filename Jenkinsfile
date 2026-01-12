@@ -49,7 +49,7 @@ stage('QUALITY-GATES') {
                     }
                 }
             }
-	stage('INFRA - EKS Creation') {
+	stage('AWS-INFRA - EKS Creation') {
             steps {
                 script {
                     // Load your infra pipeline file
