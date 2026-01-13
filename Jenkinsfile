@@ -48,17 +48,7 @@ stage('QUALITY-GATES') {
                         '''
                     }
                 }
-            }
-	stage('AWS-INFRA - EKS Creation') {
-            steps {
-                script {
-                    // Load your infra pipeline file
-                    def infra = load 'infra-pipeline.groovy'
-                    infra.runInfra()
-                }
-            }
-        }
-	
+            }	
 	 
 
 	}
